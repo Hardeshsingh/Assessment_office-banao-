@@ -1,0 +1,116 @@
+.work-order-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 600px; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #add8e6; /* Light blue color */
+  color: #fff;
+  margin-right: 10px;
+}
+
+.tabs button.active {
+  background-color: #eee;
+}
+
+.overview-content,
+.details-overlay {
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px; /* Rounded corners for the table */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+th,
+td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+}
+
+.activity-row {
+  font-style: italic;
+}
+
+input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.details-overlay.visible {
+  visibility: visible;
+}
+
+.details-overlay form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button[type="button"],
+.save-changes-btn,
+.tabs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #add8e6; /* Light blue color */
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.save-changes-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
